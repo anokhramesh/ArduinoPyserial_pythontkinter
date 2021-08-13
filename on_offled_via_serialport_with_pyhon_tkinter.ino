@@ -5,7 +5,7 @@ int led2 = 12;// created a variable name led2 int type and assigned as Arduino p
 void setup()
 {
   pinMode (led1, OUTPUT);// initilized led1 as an output
-  pinMode (led2, OUTPUT);// initilized led1 as an output
+  pinMode (led2, OUTPUT);// initilized led2 as an output
   Serial.begin(9600);// serial comuunucation boud rate-9600
 }
 void loop()
@@ -23,10 +23,10 @@ void loop()
   }
   if (serialData == 'c')// if serial data command is 1
   {
-    digitalWrite(led2, HIGH);// turn ON the led1
+    digitalWrite(led2, HIGH);// turn ON the led2
   }
   else if (serialData == 'd')// if serial data is 0
   {
-    digitalWrite(led2, LOW);// turn OFF the led1
+    digitalWrite(led2, LOW);// turn OFF the led2
   }
 }
