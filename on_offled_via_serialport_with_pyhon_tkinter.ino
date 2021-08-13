@@ -1,7 +1,7 @@
 // In this project we will control Arduino pin # 10 and 12 via serial communication from python tkinter button.
 char serialData;//created a variable name serialData char type
 int led1 = 10;// created a variable name led1 int type and assigned as Arduino pin# 10
-int led2 = 12;// created a variable name led1 int type and assigned as Arduino pin# 12
+int led2 = 12;// created a variable name led2 int type and assigned as Arduino pin# 12
 void setup()
 {
   pinMode (led1, OUTPUT);// initilized led1 as an output
