@@ -1,4 +1,4 @@
-// In this project we will control an LED connected to Arduino pin # 10 via serial communication from python tkinter button.
+// In this project we will control Arduino pin # 10 and 12 via serial communication from python tkinter button.
 char serialData;//created a variable name serialData char type
 int led1 = 10;// created a variable name led1 int type and assigned as Arduino pin# 10
 int led2 = 12;// created a variable name led1 int type and assigned as Arduino pin# 12
