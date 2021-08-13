@@ -13,23 +13,23 @@ led_control_window = tkinter.Tk()
 led_control_window.geometry("350x200")# Application window size
 led_control_window.title("ANOKHAUTOMATION")# Application title
 led_control_window.configure(background="yellow")# Application window background color
-Button = tkinter.Button # create a button object.
+Button = tkinter.Button # create a button object and adding attributes.
 # button 1
 btn1 = Button(led_control_window, text="LOAD1-ON", bg="red", fg="blue", font="Times 16 bold", padx=20, pady=10,
-              command=led_on)
-btn1.grid(row=0, column=1)
+              command=led_on)# create a button object and adding attributes.
+btn1.grid(row=0, column=1)#positioning Button1
 # button 2
 btn2 = Button(led_control_window, text="LOAD1-OFF", bg="green", fg="blue", font="Times 16 bold", padx=20, pady=10,
-              command=led_off)
-btn2.grid(row=0, column=2)
+              command=led_off)#create a button object and adding attributes.
+btn2.grid(row=0, column=2)#positioning Button2
 # button 3
 btn3 = Button(led_control_window, text="LOAD2-ON", bg="red", fg="blue", font="Times 16 bold", padx=20, pady=10,
-              command=led1_on)
-btn3.grid(row=1, column=1)
+              command=led1_on)# create a button object and adding attributes.
+btn3.grid(row=1, column=1)#positioning Button3
 # button 3
 btn4 = Button(led_control_window, text="LOAD2-OFF", bg="green", fg="blue", font="Times 16 bold", padx=20, pady=10,
-              command=led1_off)
-btn4.grid(row=1, column=2)
+              command=led1_off)# create a button object and adding attributes.
+btn4.grid(row=1, column=2)#positioning Button4
 
 led_control_window.mainloop()
 input("press enter to exit")
