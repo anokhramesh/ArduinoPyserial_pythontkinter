@@ -1,6 +1,6 @@
-import serial
-import tkinter
-arduinoData = serial.Serial('com11', 9600)
+import serial# import pyserial module 
+import tkinter# import tkinter module
+arduinoData = serial.Serial('com11', 9600)# assign Arduino COM port and Boud rate
 def led_on():  # function for led1-on
     arduinoData.write(b'a')  # send charactor 'a' when button1 pressed
 def led_off():  # function for led1-off
