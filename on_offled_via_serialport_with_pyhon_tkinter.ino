@@ -13,19 +13,19 @@ void loop()
   if (Serial.available() > 0)//check condition-serial data available
     serialData = Serial.read();
   Serial.print(serialData);
-  if (serialData == 'a')// if serial data command is 1
+  if (serialData == 'a')// if serial data command is a
   {
     digitalWrite(led1, HIGH);// turn ON the led1
   }
-  else if (serialData == 'b')// if serial data is 0
+  else if (serialData == 'b')// if serial data is b
   {
     digitalWrite(led1, LOW);// turn OFF the led1
   }
-  if (serialData == 'c')// if serial data command is 1
+  if (serialData == 'c')// if serial data command is c
   {
     digitalWrite(led2, HIGH);// turn ON the led2
   }
-  else if (serialData == 'd')// if serial data is 0
+  else if (serialData == 'd')// if serial data is d
   {
     digitalWrite(led2, LOW);// turn OFF the led2
   }
